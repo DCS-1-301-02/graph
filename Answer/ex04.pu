@@ -1,0 +1,10 @@
+@startuml ex04
+start
+:正の整数を入力する;
+if (入力値が偶数?) then (yes)
+    :「偶数」と出力;
+else (no)
+    :「奇数」と出力;
+endif
+stop
+@enduml
