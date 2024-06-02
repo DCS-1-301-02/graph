@@ -2,9 +2,9 @@
 
 ## Graphviz
 
-### 図 4.1 無向グラフ
+### 図 3.1 無向グラフ
 
-```graphviz {code_block}
+```graphviz
 graph {
     rankdir="LR";
     node [shape=box];
@@ -13,20 +13,20 @@ graph {
 }
 ```
 
-### 図 4.2 有向グラフ(単方向)
+### 図 3.2 有向グラフ(単方向)
 
-```graphviz {code_block}
+```graphviz
 digraph {
     rankdir="LR";
     node [shape=box];
     雨 -> 曇り;
     寝坊 -> 遅刻;
 }
-````
+```
 
-### 図 4.3 有向グラフ(双方向)
+### 図 3.3 有向グラフ(双方向)
 
-```graphviz {code_block}
+```graphviz
 digraph {
     rankdir="LR";
     node [shape=box];
@@ -38,15 +38,15 @@ digraph {
 }
 ```
 
-### 図 4.4 関係図
+### 図 3.4 関係図
 
-```graphviz {code_block}
+```graphviz
 digraph {
     rankdir="LR";
     node [shape=box];
 
     Note1 [label="ノート1さつ\nのねだん\n□円"];
-    Note5 [label="ノート5さつ\nのねだん\n600円"];
+    Note5 [label="ノート5さつ\nのねだん\n□円"];
     Total [label="全部のねだん\n\n710円"];
     
     Note1 -> Note5 [label="5倍する"];
@@ -59,9 +59,9 @@ digraph {
 }
 ```
 
-### 図 4.5 WBS
+### 図 3.5 WBS
 
-```plantUML {code_block}
+```plantUML
 @startwbs uml01
 * UML 2.0 
 ** 構造に関する表記
@@ -82,9 +82,9 @@ digraph {
 @endwbs
 ```
 
-### 図 4.6 ユースケース図
+### 図 3.6 ユースケース図
 
-```plantUML {code_block}
+```plantUML
 @startuml usecase01
 left to right direction
 actor "学生" as student
@@ -104,27 +104,9 @@ student --> chkgrd
 @enduml
 ```
 
-### 図 4.7 アクティビティ図
+### 図 3.7 WBS
 
-```plantUML {code_block}
-@startuml activity01
-start
-:メーラを起動する;
-while (メールをチェック) is (未読メール有)
-    :メールを読む;
-    if (返事が必要?) then (yes)
-        :返事を書く;
-    else (no)
-    endif
-endwhile (未読メール無)
-:メーラを終了する;
-stop
-@enduml
-```
-
-### 図 4.8 WBS
-
-```plantUML {code_block}
+```plantUML
 @startwbs wbs01
 * プレゼンテーション
 ** 準備
